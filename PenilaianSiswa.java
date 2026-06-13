@@ -1,3 +1,4 @@
+import com.formdev.flatlaf.FlatLightLaf;
 import javax.swing.*;
 import javax.swing.border.Border;
 import javax.swing.border.TitledBorder;
@@ -823,9 +824,9 @@ public class PenilaianSiswa extends JFrame {
      * Method main untuk menjalankan aplikasi
      */
     public static void main(String[] args) {
-        // Menggunakan Look and Feel Sistem untuk menyesuaikan tampilan bawaan OS (misal Segoe UI di Windows)
+        // Menggunakan FlatLaf untuk tampilan modern
         try {
-            UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
+            FlatLightLaf.setup();
         } catch (Exception ignored) {
         }
 
